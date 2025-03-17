@@ -19,7 +19,6 @@ This is a demo project built with Android to demonstrate the integration of NTTD
 
 4. Change the minSDK version to 24 in build.gradle(Module:app)
 5. Add the below user permission in manifest file
-    
     ```
      <uses-permission android:name="android.permission.INTERNET">
     ``` 
