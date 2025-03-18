@@ -1,7 +1,7 @@
 # nttdatapay-android-java-demo
 
 ## Introduction 
-This is a demo project built with Android to demonstrate the integration of NTTDATA Payment Gateway in a android application for java.
+This is a demo project built for Android to demonstrate the integration of NTTDATA Payment Gateway into an Android application for java.
 
 
 ## Prerequisites
@@ -10,7 +10,7 @@ This is a demo project built with Android to demonstrate the integration of NTTD
  
 ## Installation 
 1. Download the ndpsaipaycheckout-release.aar.
-2. Copy the .aar file under libs folder.
+2. Copy the .aar file under the libs folder.
 3. In build.gradle(Module) add the following implementation
 
     ```
@@ -18,18 +18,17 @@ This is a demo project built with Android to demonstrate the integration of NTTD
     ```
 
 4. Change the minSDK version to 24 in build.gradle(Module:app)
-5. Add the below user permission in manifest file
+5. Add the below user permission in the manifest file.
      `AndroidManifest.xml`:
      ```xml
      <uses-permission android:name="android.permission.INTERNET" />
 
-6. Refere the MainActivity.java file, this includes all merchant level settings and response handling
-
+6. Refer to the MainActivity.java file. This includes all merchant level settings and response handling.
 
 ## Configuration
 1. Change the details from MainActivity.java file
 2. Update merchantId, password, prodid, keys etc.
-3. For MultiProdcut transactions 
+3. For MultiProduct transactions 
     - set prodid to Multi
         ```
         newPayIntent.putExtra("prodid", "Multi");
@@ -46,7 +45,4 @@ This is a demo project built with Android to demonstrate the integration of NTTD
         ```
         newPayIntent.putExtra("subChannel", "UP")
         ```
-
-
-
 
