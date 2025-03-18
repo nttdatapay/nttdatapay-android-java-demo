@@ -15,6 +15,8 @@ This is a demo project built for Android to demonstrate the integration of NTTDA
 
     ```
      implementation(files('libs/ndpsaipaycheckout-release.aar'))
+
+     implementation libs.volley
     ```
 
 4. Change the minSDK version to 24 in build.gradle(Module:app)
