@@ -29,6 +29,24 @@ This is a demo project built with Android to demonstrate the integration of NTTD
 ## Configuration
 1. Change the details from MainActivity.java file
 2. Update merchantId, password, prodid, keys etc.
+3. For MultiProdcut transactions 
+    - set prodid to Multi
+        ```
+        newPayIntent.putExtra("prodid", "Multi");
+        ```
+
+    - set multi_products to createMultiProductData()
+        ```
+        newPayIntent.putExtra("multi_products", createMultiProductData())
+        ```
+    - Set your products details in createMultiProductData()
+
+4.  To show any specific payment mode 
+    - set subChannel to 'NB' or 'UP' or 'UI' or 'DC' or 'CC' or 'NR' etc.
+        ```
+        newPayIntent.putExtra("subChannel", "UP")
+        ```
+
 
 
 
