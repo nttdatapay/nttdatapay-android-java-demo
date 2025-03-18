@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
             newPayIntent.putExtra("merchantId", "317157");
             newPayIntent.putExtra("password", "Test@123");
-            newPayIntent.putExtra("prodid", "NSE");
+            newPayIntent.putExtra("prodid", "NSE");  // In case of multiprod set 'Multi'
             newPayIntent.putExtra("signature_request", "KEY1234567234");
             newPayIntent.putExtra("signature_response", "KEYRESP123657234");
             newPayIntent.putExtra("enc_request", "A4476C2062FFA58980DC8F79EB6A799E");
@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
             newPayIntent.putExtra("enc_response", "75AEF0FA1B94B3C10D4F5B268F757F11");
             newPayIntent.putExtra("txncurr", "INR");
             newPayIntent.putExtra("custacc", "100000036600");
-            newPayIntent.putExtra("amt","1.00");
+            newPayIntent.putExtra("amt","2.00");  //Addition of all the products in case of Multiprod transaction
             newPayIntent.putExtra("txnid", txnId);
-//            newPayIntent.putExtra("multi_products", createMultiProductData());
+//            newPayIntent.putExtra("multi_products", createMultiProductData());  //For multiprod transaction only
             newPayIntent.putExtra("isLive", false);//false true
             newPayIntent.putExtra("custFirstName", "test user");
             newPayIntent.putExtra("customerEmailID", "testuser@xyz.in");
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             newPayIntent.putExtra("udf3", "udf3");
             newPayIntent.putExtra("udf4", "udf4");
             newPayIntent.putExtra("udf5", "udf5");
-//                newPayIntent.putExtra("subChannel", "UP"); //To enable specific payment mode use this parameter else comment itout
+//                newPayIntent.putExtra("subChannel", "NB"); //To enable specific payment mode use this parameter else comment itout
             initNDPSPayments.launch(newPayIntent);
         });
     }
