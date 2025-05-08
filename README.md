@@ -5,7 +5,7 @@ This is a demo project built for Android to demonstrate the integration of NTTDA
 
 
 ## Prerequisites
-- minSdk (API level 24)
+- minSdk (API level 21)
 - maxSdk (API level 34)
  
 ## Installation 
