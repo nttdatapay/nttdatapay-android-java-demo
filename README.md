@@ -19,7 +19,7 @@ This is a demo project built for Android to demonstrate the integration of NTTDA
      implementation libs.volley
     ```
 
-4. Change the minSDK version to 24 in build.gradle(Module:app)
+4. Change the minSDK version to 21 in build.gradle(Module:app)
 5. Add the below user permission in the manifest file.
      `AndroidManifest.xml`:
      ```xml
